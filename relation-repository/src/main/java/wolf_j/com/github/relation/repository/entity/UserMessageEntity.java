@@ -1,7 +1,7 @@
 /**
  * 
  */
-package wolf_j.com.github.relation.web.repository.entity;
+package wolf_j.com.github.relation.repository.entity;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -20,7 +20,7 @@ import javax.persistence.TableGenerator;
  */
 
 @Entity
-@Table(name = "UsersMessage")
+@Table(name = "users_message")
 public class UserMessageEntity implements Serializable {
 
 	/**
@@ -29,24 +29,24 @@ public class UserMessageEntity implements Serializable {
 	private static final long serialVersionUID = 3052332122030341362L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE, generator = "UsersMessage_sequence")
-	@TableGenerator(name = "UsersMessage_sequence", allocationSize = 1, table = "SeqTable")
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "users_message_sequence")
+	@TableGenerator(name = "users_message_sequence", allocationSize = 1, table = "seq_table")
 	@Column(unique = true, name = "id")
 	private long id;
 
 	@Column(name = "username", nullable = false, unique = true, length = 20)
 	private String username;
 
-	@Column(name = "fullName", length = 20)
+	@Column(name = "full_name", length = 20)
 	private String fullName;
 
-	@Column(name = "phoneNumber", length = 20)
+	@Column(name = "phone_number", length = 20)
 	private String phoneNumber;
 
 	@Column(name = "sex", length = 5)
 	private String sex;
 
-	@Column(name = "birthDay", length = 20)
+	@Column(name = "birth_day", length = 20)
 	private String birthDay;
 
 	@Column(name = "address", length = 50)
@@ -55,7 +55,7 @@ public class UserMessageEntity implements Serializable {
 	@Column(name = "organization", length = 50)
 	private String organization;
 
-	@Column(name = "whatUp", length = 50)
+	@Column(name = "what_up", length = 50)
 	private String whatUp;
 
 	public UserMessageEntity() {

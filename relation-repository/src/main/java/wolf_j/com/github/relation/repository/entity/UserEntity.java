@@ -1,11 +1,12 @@
 /**
  * 
  */
-package wolf_j.com.github.relation.web.repository.entity;
+package wolf_j.com.github.relation.repository.entity;
 
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,49 +26,43 @@ import org.springframework.security.core.userdetails.UserDetails;
  */
 
 @Entity
-@Table(name = "Users")
+@Table(name = "user")
 public class UserEntity implements Serializable, UserDetails {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 5113359539035265304L;
 	@Id
-	@GeneratedValue(strategy =  GenerationType.TABLE, generator = "User_sequence")
-	@TableGenerator(name = "User_sequence", allocationSize = 1,table = "SeqTable")
+	@GeneratedValue(strategy =  GenerationType.TABLE, generator = "user_sequence")
+	@TableGenerator(name = "user_sequence", allocationSize = 1,table = "seq_table")
 	@Column(unique = true, name = "id")
 	private long id;
 
-	@Column(name = "username", nullable = false, unique = true, length = 20)
-	private String username;
+	@Column(name = "user_id", nullable = false, unique = true, length = 20)
+	private String userId;
 
 	@Column(name = "password", nullable = false, length = 100)
-	private String password;
+	private String passWord;
 
 	@Column(name = "role")
 	private String role;
 
+	@Column(name = "create_time", nullable = false)
+	private Date createTime;
+
+	@Column(name = "update_time")
+	private Date updateTime;
+
 	public UserEntity() {
 	}
 
-	public UserEntity(String username, String password, String role) {
+	public UserEntity(String userId, String passWord, String role) {
 
-		this.setUsername(username);
-		this.setPassword(password);
+		this.setUserId(userId);
+		this.setPassWord(passWord);
 		this.setRole(role);
 
 	}
 
-	public long getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	public String getUsername() {
-		return username;
+		return userId;
 	}
 
 	@Override
@@ -90,21 +85,33 @@ public class UserEntity implements Serializable, UserDetails {
 		return true;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return Arrays.asList(new SimpleGrantedAuthority(getRole()));
 	}
 
-	public String getPassword() {
-		return password;
+	public long getId() {
+		return id;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getUserId(String userId) {
+		return this.userId;
+	}
+
+	public String getPassword() {
+		return passWord;
+	}
+
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
 	}
 
 	public String getRole() {
@@ -116,7 +123,7 @@ public class UserEntity implements Serializable, UserDetails {
 	}
 
 	public boolean isSameUserProperties(UserEntity user) {
-		if (user.id == this.id && user.username.equals(this.username) && user.password.equals(this.password)
+		if (user.id == this.id && user.userId.equals(this.userId) && user.passWord.equals(this.passWord)
 				&& user.role.equals(this.role))
 			return true;
 		return false;

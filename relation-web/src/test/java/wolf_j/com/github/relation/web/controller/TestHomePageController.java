@@ -17,9 +17,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import wolf_j.com.github.relation.web.biz.service.RegisterService;
-import wolf_j.com.github.relation.web.biz.service.bean.RegisterMessage;
-import wolf_j.com.github.relation.web.biz.service.bean.UserFromFrontEnd;
+import wolf_j.com.github.relation.biz.service.RegisterService;
+import wolf_j.com.github.relation.biz.service.bean.RegisterMessage;
+import wolf_j.com.github.relation.biz.service.bean.UserFromFrontEnd;
 
 /**
  * @author wolf-J

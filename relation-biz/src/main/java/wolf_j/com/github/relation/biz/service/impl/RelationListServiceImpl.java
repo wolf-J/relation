@@ -1,16 +1,16 @@
 /**
  *
  */
-package wolf_j.com.github.relation.web.biz.service.impl;
+package wolf_j.com.github.relation.biz.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import wolf_j.com.github.relation.web.biz.service.RelationListService;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageRepository;
+import wolf_j.com.github.relation.biz.service.RelationListService;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageRepository;
 
 import java.util.List;
 

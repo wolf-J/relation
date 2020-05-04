@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import wolf_j.com.github.relation.web.repository.entity.UserEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserRepository;
+import wolf_j.com.github.relation.repository.entity.UserEntity;
+import wolf_j.com.github.relation.repository.entity.UserRepository;
 
 /**
  * @author wolf-J

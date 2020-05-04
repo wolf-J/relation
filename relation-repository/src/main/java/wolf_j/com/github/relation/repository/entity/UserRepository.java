@@ -1,7 +1,7 @@
 /**
  * 
  */
-package wolf_j.com.github.relation.web.repository.entity;
+package wolf_j.com.github.relation.repository.entity;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

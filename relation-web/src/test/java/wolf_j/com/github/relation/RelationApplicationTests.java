@@ -1,4 +1,4 @@
-package wolf_j.com.github.relation.web;
+package wolf_j.com.github.relation;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,9 +1,9 @@
 /**
  * 
  */
-package wolf_j.com.github.relation.web.biz.service.bean;
+package wolf_j.com.github.relation.biz.service.bean;
 
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
 
 import java.io.Serializable;
 

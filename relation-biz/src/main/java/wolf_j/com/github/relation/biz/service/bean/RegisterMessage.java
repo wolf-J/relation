@@ -1,7 +1,7 @@
 /**
  * 
  */
-package wolf_j.com.github.relation.web.biz.service.bean;
+package wolf_j.com.github.relation.biz.service.bean;
 
 /**
  * @author wolf-J

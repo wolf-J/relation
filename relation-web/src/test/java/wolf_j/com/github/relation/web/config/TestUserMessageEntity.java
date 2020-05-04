@@ -6,7 +6,10 @@ package wolf_j.com.github.relation.web.config;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Wolf
@@ -33,6 +36,7 @@ public class TestUserMessageEntity {
 		
 		userMessageEntity.setBirthDay("2018-11-02");
 		assertTrue(userMessageEntity.validateBirthDay());
+		List<String> list = new ArrayList<String>(16);
 	}
 
 }

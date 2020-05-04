@@ -5,15 +5,11 @@ server:
 
 spring:
   datasource:
-#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-#    url: jdbc:sqlserver://localhost:1433;DatabaseName=wolf_j.com.github.relation;integratedSecurity=false;sendStringParametersAsUnicode=false
-#    username: sa
-#    password: Password@123
-    
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:5432/DBCOAST
-    username: postgres
-    password: hj965691203
+
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.106.127.45:3306/relation?characterEncoding=utf8&useSSL=true
+    username: appuser
+    password: Hj965691203...
 
     tomcat:
       max-active: 10

@@ -33,7 +33,7 @@ public class ControllerInterceptor {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ControllerInterceptor.class);
 
-	@Pointcut("execution(public * wolf_j.com.github.relation.controller.*.*(..)) and @annotation(org.springframework.web.bind.annotation.RequestMapping") // 两个..代表所有子目录，最后括号里的两个..代表所有参数
+	@Pointcut("execution(public * wolf_j.com.github.relation.web.controller.*.*(..)) && @annotation(org.springframework.web.bind.annotation.RequestMapping)") // 两个..代表所有子目录，最后括号里的两个..代表所有参数
 	public void logPointCut() {
 	}
 

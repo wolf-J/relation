@@ -9,8 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import wolf_j.com.github.relation.web.biz.service.RelationListService;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.biz.service.RelationListService;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
 
 import java.util.List;
 

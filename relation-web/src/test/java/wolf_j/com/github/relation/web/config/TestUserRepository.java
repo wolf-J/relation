@@ -17,8 +17,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import wolf_j.com.github.relation.web.repository.entity.UserEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserRepository;
+import wolf_j.com.github.relation.repository.entity.UserEntity;
+import wolf_j.com.github.relation.repository.entity.UserRepository;
 
 /**
  * @author wolf-J

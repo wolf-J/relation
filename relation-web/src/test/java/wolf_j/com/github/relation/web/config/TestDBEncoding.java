@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageRepository;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageRepository;
 
 import static org.junit.Assert.assertEquals;
 

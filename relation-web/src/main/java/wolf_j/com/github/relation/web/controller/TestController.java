@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import wolf_j.com.github.relation.web.repository.entity.UserEntity;
+import wolf_j.com.github.relation.repository.entity.UserEntity;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;

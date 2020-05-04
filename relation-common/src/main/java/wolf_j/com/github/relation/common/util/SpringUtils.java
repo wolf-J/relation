@@ -1,4 +1,4 @@
-package wolf_j.com.github.relation.web.common.util;
+package wolf_j.com.github.relation.common.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

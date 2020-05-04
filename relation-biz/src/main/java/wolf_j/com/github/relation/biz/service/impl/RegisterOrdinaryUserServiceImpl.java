@@ -1,16 +1,16 @@
-package wolf_j.com.github.relation.web.biz.service.impl;
+package wolf_j.com.github.relation.biz.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import wolf_j.com.github.relation.web.biz.service.RegisterService;
-import wolf_j.com.github.relation.web.biz.service.bean.RegisterMessage;
-import wolf_j.com.github.relation.web.biz.service.bean.UserFromFrontEnd;
-import wolf_j.com.github.relation.web.repository.entity.UserEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageRepository;
-import wolf_j.com.github.relation.web.repository.entity.UserRepository;
+import wolf_j.com.github.relation.biz.service.RegisterService;
+import wolf_j.com.github.relation.biz.service.bean.RegisterMessage;
+import wolf_j.com.github.relation.biz.service.bean.UserFromFrontEnd;
+import wolf_j.com.github.relation.repository.entity.UserEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageRepository;
+import wolf_j.com.github.relation.repository.entity.UserRepository;
 
 /**
  * @author wolf-J

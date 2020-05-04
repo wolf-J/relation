@@ -10,13 +10,14 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import wolf_j.com.github.relation.web.repository.entity.UserMessageEntity;
-import wolf_j.com.github.relation.web.repository.entity.UserMessageRepository;
+import wolf_j.com.github.relation.repository.entity.UserMessageEntity;
+import wolf_j.com.github.relation.repository.entity.UserMessageRepository;
 
 /**
  * @author wolf-J

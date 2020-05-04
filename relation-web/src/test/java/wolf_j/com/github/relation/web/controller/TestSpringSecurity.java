@@ -13,7 +13,7 @@ import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import wolf_j.com.github.relation.web.config.security.UserService;
-import wolf_j.com.github.relation.web.biz.service.RegisterService;
+import wolf_j.com.github.relation.biz.service.RegisterService;
 
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.authenticated;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

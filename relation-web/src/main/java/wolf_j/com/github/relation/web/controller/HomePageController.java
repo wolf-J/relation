@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import wolf_j.com.github.relation.web.biz.service.bean.UserFromFrontEnd;
+import wolf_j.com.github.relation.biz.service.bean.UserFromFrontEnd;
 
 /**
  * @author wolf-J
